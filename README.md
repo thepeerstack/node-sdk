@@ -9,9 +9,13 @@ npm i thepeer-node
 ## Usage
 
 ```js
-const thepeer = new Thepeer(secretKey)
+const userPayload = {
+    name: 'Ila Rowe',
+    identifier: 'garnet.keeling@hotmail.com',
+    email: 'garnet.keeling@hotmail.com',
+}
 
-let user = thepeer.indexUser("Thor Odin", "thor", "thor@odin.com");
+let user = thepeer.indexUser({ ...userPayload });
 ```
 
 ### Available methods
@@ -35,9 +39,10 @@ let user = thepeer.indexUser("Thor Odin", "thor", "thor@odin.com");
     
 * indexUser
     - `accepts`:
-        - name (string)
-        - email (string)
-        - identifier (string)
+        - payload (object)
+        - payload.name (string)
+        - payload.identifier (string)
+        - payload.email (string)
     - `returns`: object
         
 * updateUser

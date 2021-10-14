@@ -7,6 +7,10 @@ module.exports = {
   extends: [
     'standard'
   ],
+  globals: {
+    describe: 'readonly',
+    it: 'readonly'
+  },
   parserOptions: {
     ecmaVersion: 12
   },
