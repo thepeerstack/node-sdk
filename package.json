@@ -1,7 +1,7 @@
 {
-  "name": "thepeer-node-sdk",
-  "version": "1.0.0",
-  "description": "Thepeer NodeJs SDK",
+  "name": "thepeer-node",
+  "version": "0.0.1",
+  "description": "The official node package for Thepeer",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,30 +10,28 @@
     "type": "git",
     "url": "git+https://github.com/thepeerstack/node-sdk.git"
   },
-  "keywords": [
-    "thepeer",
-    "financial",
-    "data",
-    "API",
-    "direct-charge",
-    "direct-debit",
-    "send",
-    "p2p"
+  "author": {
+    "name": "Thepeer",
+    "email": "hi@thepeer.co",
+    "url": "https://thepeer.co"
+  },
+  "contributors": [
+    "Michael Trojan Okoh <hi@thepeer.co>",
+    "Faithful Ojebiyi <faithfulojebiyi@gmail.com>"
   ],
-  "author": "Faithful Ojebiyi <faithfulojebiyi@gmail.com>",
-  "license": "Apache",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/thepeerstack/node-sdk/issues"
   },
   "homepage": "https://github.com/thepeerstack/node-sdk#readme",
+  "dependencies": {
+    "axios": "^0.21.4"
+  },
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0"
-  },
-  "dependencies": {
-    "axios": "^0.23.0"
   }
 }

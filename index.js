@@ -1,3 +1,3 @@
-const ThePeer = require('./lib/Thepeer')
+const Thepeer = require('./lib/Thepeer')
 
-module.exports = ThePeer
+module.exports = Thepeer
