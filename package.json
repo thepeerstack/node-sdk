@@ -10,14 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/thepeerstack/node-sdk.git"
   },
-  "type": "module",
   "author": {
     "name": "Thepeer",
     "email": "hi@thepeer.co",
     "url": "https://thepeer.co"
   },
   "contributors": [
-    "Michael Trojan Okoh <hi@thepeer.co>"
+    "Michael Trojan Okoh <hi@thepeer.co>",
+    "Faithful Ojebiyi <faithfulojebiyi@gmail.com>"
   ],
   "license": "ISC",
   "bugs": {
