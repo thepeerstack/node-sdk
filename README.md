@@ -16,7 +16,7 @@ let user = thepeer.indexUser("Thor Odin", "thor", "thor@odin.com");
 
 ### Available methods
 
-* validateSiganture
+* validateSignature
     - `accepts`: 
         - request (object)
         - signature (object)
@@ -62,7 +62,7 @@ let user = thepeer.indexUser("Thor Odin", "thor", "thor@odin.com");
         - amount (integer)
     - `returns`: object
     
-* authorizaDirectCharge
+* authorizeDirectCharge
     - `accepts`:
         - reference (string)
         - insufficient_funds (bool)
