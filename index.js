@@ -1,3 +1,1 @@
-const Thepeer = require('./lib/Thepeer')
-
-module.exports = Thepeer
+export { Thepeer as default } from './lib/Thepeer';
