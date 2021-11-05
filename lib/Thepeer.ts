@@ -1,7 +1,8 @@
 import crypto from 'crypto';
 import Helper from './utils/Helper';
 import axios, { AxiosInstance } from "axios";
-import { IndexedUser, DeleteResponse, User, Link, Transaction, RequestConfig } from './types';
+import { IndexedUser, DeleteResponse, User, Link, Transaction, RequestConfig } from '..';
+
 
 export class Thepeer {
   private request: AxiosInstance;
@@ -40,7 +41,7 @@ export class Thepeer {
   async indexUser(name: string, identifier: string, email: string) {
 
     return (
-      await this.dispatchRequest<{ indexed_user: IndexedUser; }>({
+      await this.dispatchRequest<IndexedUser>({
         requestType: 'post',
         endpoint: '/users',
         payload: { name, identifier, email }
@@ -52,7 +53,7 @@ export class Thepeer {
   async updateUser(reference: string, identifier: string) {
 
     return (
-      await this.dispatchRequest<{ indexed_user: IndexedUser; }>({
+      await this.dispatchRequest<IndexedUser>({
         requestType: 'put',
         endpoint: `/users/${reference}`,
         payload: { identifier }
@@ -75,7 +76,7 @@ export class Thepeer {
   async getUser(reference: string) {
 
     return (
-      await this.dispatchRequest<{ user: User; }>({
+      await this.dispatchRequest<User>({
         endpoint: `/users/${reference}`
       })
     )?.data;
@@ -85,7 +86,7 @@ export class Thepeer {
   async getLink(linkId: string) {
 
     return (
-      await this.dispatchRequest<{ link: Link; }>({
+      await this.dispatchRequest<Link>({
         endpoint: `/link/${linkId}`
       })
     )?.data;
@@ -95,7 +96,7 @@ export class Thepeer {
   async chargeLink(linkId: string, amount: number, remark: string) {
 
     return (
-      await this.dispatchRequest<{ transaction: Transaction; }>({
+      await this.dispatchRequest<Transaction>({
         requestType: 'post',
         endpoint: `/link/${linkId}/charge`,
         payload: {
@@ -109,7 +110,7 @@ export class Thepeer {
   async authorizeDirectCharge(reference: string, insufficientFunds: boolean) {
 
     return (
-      await this.dispatchRequest<{ transaction: Transaction; }>({
+      await this.dispatchRequest<Transaction>({
         requestType: 'post',
         endpoint: `/debit/${reference}`,
         payload: {
@@ -123,7 +124,7 @@ export class Thepeer {
   async processSendReceipt(receipt: string, insufficientFunds: boolean) {
 
     return (
-      await this.dispatchRequest<{ transaction: Required<Transaction>; }>({
+      await this.dispatchRequest<Required<Transaction>>({
         requestType: 'post',
         endpoint: `/send/${receipt}`,
         payload: {
@@ -137,10 +138,10 @@ export class Thepeer {
   async getSendReceipt(receipt: string) {
 
     return (
-      await this.dispatchRequest<{ transaction: Required<Transaction>; }>({
+      await this.dispatchRequest<Required<Transaction>>({
         endpoint: `/send/${receipt}`
       })
     )?.data;
-  }
 
+  }
 }
