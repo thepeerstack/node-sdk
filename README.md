@@ -30,7 +30,7 @@ let user = thepeer.indexUser("Thor Odin", "thor", "thor@odin.com");
 * processSendReceipt
     - `accepts`: 
         - receipt_id (string)
-        - insufficient_funds (bool)
+        - event (string)
     - `returns`: object
     
 * indexUser
@@ -65,7 +65,7 @@ let user = thepeer.indexUser("Thor Odin", "thor", "thor@odin.com");
 * authorizeDirectCharge
     - `accepts`:
         - reference (string)
-        - insufficient_funds (bool)
+        - event (string)
     - `returns`: object
 
 ## Extra
