@@ -20,7 +20,7 @@ let user = thepeer.indexUser({ ...userPayload });
 
 ### Available methods
 
-* validateSiganture
+* validateSignature
     - `accepts`: 
         - request (object)
         - signature (object)
@@ -34,7 +34,7 @@ let user = thepeer.indexUser({ ...userPayload });
 * processSendReceipt
     - `accepts`: 
         - receipt_id (string)
-        - insufficient_funds (bool)
+        - event (string)
     - `returns`: object
     
 * indexUser
@@ -67,10 +67,10 @@ let user = thepeer.indexUser({ ...userPayload });
         - amount (integer)
     - `returns`: object
     
-* authorizaDirectCharge
+* authorizeDirectCharge
     - `accepts`:
         - reference (string)
-        - insufficient_funds (bool)
+        - event (string)
     - `returns`: object
 
 ## Extra
