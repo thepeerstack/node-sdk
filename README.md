@@ -22,16 +22,10 @@ let user = thepeer.indexUser("Thor Odin", "thor", "thor@odin.com");
         - signature (object)
     - `returns`: boolean
     
-* getSendReceipt
+* authorizeCharge
     - `accepts`: 
-        - receipt_id (string)
-    - `returns`: object
-    
-* processSendReceipt
-    - `accepts`: 
-        - receipt_id (string)
-        - event (string)
-    - `returns`: object
+        - charge_id (string)
+    - `returns`: boolean
     
 * indexUser
     - `accepts`:
