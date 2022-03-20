@@ -22,16 +22,10 @@ let user = thepeer.indexUser("Thor Odin", "thor", "thor@odin.com");
         - signature (object)
     - `returns`: boolean
     
-* getSendReceipt
+* authorizeCharge
     - `accepts`: 
-        - receipt_id (string)
-    - `returns`: object
-    
-* processSendReceipt
-    - `accepts`: 
-        - receipt_id (string)
-        - event (string)
-    - `returns`: object
+        - charge_id (string)
+    - `returns`: boolean
     
 * indexUser
     - `accepts`:
@@ -60,12 +54,6 @@ let user = thepeer.indexUser("Thor Odin", "thor", "thor@odin.com");
     - `accepts`:
         - lind_id (string)
         - amount (integer)
-    - `returns`: object
-    
-* authorizeDirectCharge
-    - `accepts`:
-        - reference (string)
-        - event (string)
     - `returns`: object
 
 ## Extra
