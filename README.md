@@ -25,6 +25,7 @@ let user = thepeer.indexUser("Thor Odin", "thor", "thor@odin.com");
 * authorizeCharge
     - `accepts`: 
         - charge_id (string)
+        - event (string)
     - `returns`: boolean
     
 * indexUser
