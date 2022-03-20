@@ -61,12 +61,6 @@ let user = thepeer.indexUser("Thor Odin", "thor", "thor@odin.com");
         - lind_id (string)
         - amount (integer)
     - `returns`: object
-    
-* authorizeDirectCharge
-    - `accepts`:
-        - reference (string)
-        - event (string)
-    - `returns`: object
 
 ## Extra
 
