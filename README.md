@@ -24,7 +24,7 @@ let user = thepeer.indexUser("Thor Odin", "thor", "thor@odin.com");
     
 * authorizeCharge
     - `accepts`: 
-        - charge_id (string)
+        - reference (string)
         - event (string)
     - `returns`: boolean
     
@@ -48,12 +48,12 @@ let user = thepeer.indexUser("Thor Odin", "thor", "thor@odin.com");
     
 * getLink
     - `accepts`:
-        - lind_id (string)
+        - link_id (string)
     - `returns`: object
 
 * chargeLink
     - `accepts`:
-        - lind_id (string)
+        - link_id (string)
         - amount (integer)
     - `returns`: object
 
