@@ -1,6 +1,6 @@
 {
   "name": "thepeer-node",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "The official node package for Thepeer",
   "main": "index.js",
   "scripts": {
