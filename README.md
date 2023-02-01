@@ -56,6 +56,10 @@ let user = thepeer.indexUser("Thor Odin", "thor", "thor@odin.com");
         - link_id (string)
         - amount (integer)
     - `returns`: object
+* getBusinesses
+    - `accepts`:
+        - channel (string)
+    - `returns`: object
 
 ## Extra
 
